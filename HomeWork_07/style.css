@@ -106,6 +106,7 @@ padding: 40px 16px;
 
 .logo {
     margin-bottom: 256px;
+
 }
 
 
@@ -323,6 +324,96 @@ padding: 40px 16px;
     padding-right: 24px;
 }
 
+/* 1. Создать медиа запрос, чтобы наш проект 
+отлично смотрелся на разрешениях экрана 768-1024. */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        display: flex;
+        width: 100%;
+        padding: 39px 0px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .header-nav {
+        width: 60%;
+        justify-content: center;
+        
+
+    }
+    .flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-left {
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 128px;
+    }
+
+    .main-right {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .logo2 {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .aside-left {
+        width: 77%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+    }
+
+    .aside-right {
+        padding-left: 0px;
+    }
+
+    .content {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+    }
+
+    .item {
+        width: 47%; 
+    } 
+
+    .reviews-left {
+        width: 55%;
+        padding-bottom: 64px;
+    }
+
+    .reviews-right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacts {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+    
+    }
+    
+}
+
+/* 2. Создать планшетную версию проекта. */
+
 @media (max-width: 768px) {
     .container {
         display: flex;
@@ -330,37 +421,86 @@ padding: 40px 16px;
         padding: 39px 0px;
         justify-content: center;
         align-items: center;
-        gap: 32px;
+        flex-direction: column;
+    }
+    .header-nav {
+        width: 60%;
+        justify-content: center;
         
+
+    }
+    .flex {
+        display: flex;
+        justify-content: center;
     }
 
     .main-left {
-        display: flex;
-        width: 100%;
+        width: 80%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10%;
+        padding-bottom: 128px;
     }
 
     .main-right {
         display: flex;
-        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .logo2 {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .aside-left {
+        width: 77%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10%;
+        padding-right: 0px;
     }
 
-    .logo {
+    .aside-right {
+        padding-left: 0px;
+    }
+
+    .content {
         display: flex;
         width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 32px;
+
     }
+
+    .item {
+        width: 47%; 
+    } 
+
+    .reviews-left {
+        width: 55%;
+        padding-bottom: 64px;
+    }
+
+    .reviews-right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacts {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+    
+    }
+    
+}
+
 
 
 
     
-}
+
