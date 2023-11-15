@@ -9,8 +9,11 @@
 
 2. Проверить сайт на ошибки. 
 
+Проверка кода index.html
+
 ![](validator_html.png)
 
+Проверка кода style.css
 
 ![](validator_css.png)
 
