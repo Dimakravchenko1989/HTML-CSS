@@ -11,9 +11,13 @@
 
 Проверка кода index.html
 
+Исправил ошибки
+
 ![](validator_html.png)
 
-Проверка кода style.css
+Проверка кода style.css 
+
+Исправил ошибки
 
 ![](validator_css.png)
 
